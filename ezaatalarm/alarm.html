@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="alarm.css">
+</head>
+<body>
+  <img src="alarm.png">
+  <div id="app"> 
+  <div id="title">
+     <h1> Alarm</h1>
+     <div id="current_time">current_time</div> 
+  </div> 
+  
+  <div id="container">
+    <form id="form">
+        <div id="inputs"> 
+        <input
+        id="alarmhours"
+        type="number"
+        name="hour"
+        placeholder="Hours"
+        min="0"
+        max="12"
+        required
+      />
+      <input
+      id="alarmmins"
+        type="number"
+        name="min"
+        min="0"
+        max="60"
+        placeholder="Minutes"
+        required
+      />
+      <input
+      id="alarmsec"
+        type="number"
+        name="sec"
+        min="0"
+        max="60"
+        placeholder="Seconds"
+        required
+      />
+      <select name="AM/PM" id="zone" required>
+        <option value="" selected disabled>AM/PM</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+    </div>
+    <div id="btn">
+        <button id="SubmitBtn">Submit</button>
+    </div>
+    </form>
+  </div>
+</div>
+  <audio id="audio" src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3"></audio>
+
+  <script src="alarm.js"></script>
+</body>
+</html>

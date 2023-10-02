@@ -1,0 +1,114 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+      margin: 0;
+      padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    background-image: linear-gradient(180deg,
+    rgb(195, 208, 231) 0%,
+    rgb(182, 217, 251) 50%,
+    rgb(120, 194, 221) 100%);
+  }
+  #app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #title{
+    font-weight: bolder;
+    font-size:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  h1{
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  img{
+    width: 500px;
+  }
+  button {
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    margin-left: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 2px #888888;
+    border:#000;
+  }
+  button:hover {
+    background-color: #d4dde6;
+  }
+  #btn{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #current_time{
+    margin-bottom: 2%;
+    font-size: 45px;
+  }
+  #img{
+    width: 200px; 
+    height: 150px;
+  }
+ #container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .alarm{
+  margin-top: 4dvh;
+ }
+#inputs{
+display:flex;
+}
+ input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background: transparent;
+  text-align: center;
+  border: none;
+}
+
+
+ @media (max-width: 767px) {
+  body{
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    justify-content: center;
+
+  }
+  #title{
+    font-size: 30px;
+  }
+  #inputs{
+    display: flex;
+    flex-direction: column;
+  }
+  img{
+    width:200px;
+  }
+ 
+ }
